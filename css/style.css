@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: url('../src/—Pngtree—red\ and\ blue\ gradient\ overprinted_5360525\ 1.png');
+}
+
+header {
+  height: 50px;
+  display: flex;
+  justify-content: end;
+}
+
+.menuText {
+  font-size: 1.2em;
+}
+
+.wrap {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.timeLine > li > ul {
+  display: none;
+  position: absolute;
+  right: 490px;
+}
+
+.timeLine > li > ul li {
+  position: relative;
+  left: 30px;
+  top: 30px;
+  margin-top: 10px;
+}
+
+.timeLine > li:hover ul {
+  display: block;
+}
+
+input {
+  width: 250px;
+  height: 50%;
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid #000;
+}
