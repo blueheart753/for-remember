@@ -25,9 +25,10 @@
 
 .container1 {
   height: 100vh;
-  background: no-repeat url("../src/—Pngtree—red\ and\ blue\ gradient\ overprinted_5360525\ 1.png") fixed;
-  background-size: cover;
+  background: url("../src/—Pngtree—red\ and\ blue\ gradient\ overprinted_5360525\ 1.png");
+  background-attachment: fixed;
   display: none;
+  z-index: 999;
 }
 
 header {
@@ -77,9 +78,6 @@ header a {
   background: #b3c890;
   color: #fff;
 }
-.timeLine {
-  position: relative;
-}
 
 .timeLine > li:hover > .drop_back {
   height: 200px;
@@ -89,7 +87,7 @@ header a {
   z-index: -1;
   transition: 0.3s;
   top: 100%;
-  right: -640px;
+  right: 0;
   width: 100vw;
   height: 0;
   background-color: #cecece3a;
@@ -166,8 +164,16 @@ input {
   background: transparent;
   color: #fff;
   border-radius: 15px;
-  margin-left: 100px;
   font-size: 20px;
+}
+
+.greantBg1 button {
+  margin-left: 100px;
+}
+
+.greantBg2 *,
+.greantBg3 * {
+  margin-left: 100px;
 }
 
 .greantBg button:hover {
@@ -175,4 +181,52 @@ input {
   border: 0;
   background: #fff;
   color: #000;
+}
+
+.bg {
+  box-sizing: border-box;
+  width: 100%;
+  height: 128px;
+  background: url("../src/—Pngtree—red\ and\ blue\ gradient\ overprinted_5360525\ 1.png");
+  filter: blur(5px);
+  display: none;
+}
+
+.bg1 {
+  background-position: 0 128px;
+}
+
+.bg2 {
+  background-position: 0 500px;
+}
+
+.container3 {
+  display: none;
+  height: 641px;
+  background: url(../src/war-transformed\ 1.png) no-repeat;
+  justify-content: end;
+  align-items: end;
+  z-index: -1;
+}
+
+.container4 {
+  display: none;
+  height: 641px;
+  background: url(../src/close-up-on-small-greece-flag-isolated\ 1.png) no-repeat;
+  justify-content: end;
+  align-items: end;
+  z-index: -1;
+}
+
+.foot {
+  background: #252525;
+  height: 70px;
+  width: 100%;
+  color: white;
+}
+
+.about {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
 }
