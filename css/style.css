@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "KCCAhnjunggeun";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCAhnjunggeun.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Happy_dobi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Happy_dobi.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +21,7 @@
 
 .container1 {
   height: 100vh;
-  background: no-repeat
-    url('../src/—Pngtree—red\ and\ blue\ gradient\ overprinted_5360525\ 1.png');
+  background: no-repeat url("../src/—Pngtree—red\ and\ blue\ gradient\ overprinted_5360525\ 1.png") fixed;
   background-size: cover;
 }
 
@@ -59,16 +72,18 @@ input {
 }
 
 .rememberKoreanWar {
+  margin-top: 100px;
   display: flex;
-  height: 580px;
+  height: 500px;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: space-around;
 }
 
 .rememberKoreanWar > h1 {
-  font-size: 300px;
-  letter-spacing: 20px;
+  font-size: 200px;
+  letter-spacing: 10px;
+  font-family: "Happy_dobi";
 }
 
 .rememberKoreanWar > p {
@@ -79,6 +94,7 @@ input {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-family: "KCCAhnjunggeun";
 }
 
 .container2 {
@@ -92,13 +108,7 @@ input {
 .greantBg {
   width: 518px;
   height: 164px;
-  background-image: linear-gradient(
-    322deg,
-    #3d3d3d 6.25%,
-    rgba(61, 61, 61, 0.11) 94.79%,
-    rgba(61, 61, 61, 0.16) 99.99%,
-    rgba(61, 61, 61, 0) 100%
-  );
+  background-image: linear-gradient(322deg, #3d3d3d 6.25%, rgba(61, 61, 61, 0.11) 94.79%, rgba(61, 61, 61, 0.16) 99.99%, rgba(61, 61, 61, 0) 100%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   display: flex;
   flex-direction: column;
@@ -122,4 +132,11 @@ input {
   border-radius: 15px;
   margin-left: 100px;
   font-size: 20px;
+}
+
+.greantBg button:hover {
+  cursor: pointer;
+  border: 0;
+  background: #fff;
+  color: #000;
 }
