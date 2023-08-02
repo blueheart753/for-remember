@@ -19,17 +19,25 @@
   list-style: none;
 }
 
+.container {
+  display: none;
+}
+
 .container1 {
   height: 100vh;
   background: no-repeat url("../src/—Pngtree—red\ and\ blue\ gradient\ overprinted_5360525\ 1.png") fixed;
   background-size: cover;
+  display: none;
 }
 
 header {
-  height: 50px;
+  height: 100px;
   display: flex;
   justify-content: end;
-  padding: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 11;
 }
 
 .menuText {
@@ -40,29 +48,57 @@ header {
 
 .wrap {
   width: 800px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
-  position: fixed;
+}
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  transition: 0.3s;
 }
 
 .timeLine > li > ul {
-  display: none;
+  height: 0;
+  transition: 0.3s;
+  overflow: hidden;
 }
-
-.timeLine > li > ul li {
-  padding: 30px 0 0 0;
+.timeLine > li > ul > a {
+  height: 50px;
 }
 
 .timeLine > li:hover ul {
-  display: block;
+  height: 200px;
 }
 
-.timeLine ul li:hover {
+.timeLine ul a:hover {
   background: #b3c890;
   color: #fff;
 }
+.timeLine {
+  position: relative;
+}
 
+.timeLine > li:hover > .drop_back {
+  height: 200px;
+}
+.drop_back {
+  position: absolute;
+  z-index: -1;
+  transition: 0.3s;
+  top: 100%;
+  right: -640px;
+  width: 100vw;
+  height: 0;
+  background-color: #cecece3a;
+}
+.input_box {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
 input {
   width: 250px;
   height: 30px;
@@ -72,7 +108,7 @@ input {
 }
 
 .rememberKoreanWar {
-  margin-top: 100px;
+  padding: 100px;
   display: flex;
   height: 500px;
   flex-direction: column;
@@ -100,7 +136,7 @@ input {
 .container2 {
   height: 650px;
   background: url(../src/image\ 2.png);
-  display: flex;
+  display: none;
   justify-content: end;
   align-items: end;
 }
