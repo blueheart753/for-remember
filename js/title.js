@@ -1,18 +1,18 @@
 let typingBool = false;
 let typingIdx = 0;
 
-let typingTxt = $(".Wellcome").text();
+let typingTxt = document.querySelector(".Wellcome").textContent;
 
 typingTxt = typingTxt.split("");
-
+let tyInt;
 if (typingBool == false) {
   typingBool = true;
-  let tyInt = setInterval(typing, 100);
+  tyInt = setInterval(typing, 70);
 }
 
 function typing() {
   if (typingIdx < typingTxt.length) {
-    $(".typing").append(typingTxt[typingIdx]);
+    document.querySelector(".typing").append(typingTxt[typingIdx]);
     typingIdx++;
   } else {
     clearInterval(tyInt);
