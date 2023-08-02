@@ -9,6 +9,7 @@
   <script src="./js/app.js" defer></script>
   <script src="./js/title.js" defer></script>
   <script src="./js/titleWar.js" defer></script>
+  <script src="./js/visible.js" defer></script>
   <title>전쟁에 관한 간단한 고찰</title>
 </head>
 
@@ -45,11 +46,50 @@
             </ul>
             <div class="drop_back"></div>
           </li>
+
+          <li>
+            <a href="/" class="menuText">전투</a>
+            <ul class="drop">
+              <a href="/" class="menuText">
+                <li>서울</li>
+              </a>
+              <a href="/" class="menuText">
+                <li>경기도</li>
+              </a>
+              <a href="/" class="menuText">
+                <li>충청도</li>
+              </a>
+              <a href="/" class="menuText">
+                <li>경상도</li>
+              </a>
+            </ul>
+            <div class="drop_back"></div>
+          </li>
+
+          <li>
+            <a href="./view/war.html" class="menuText">참전병</a>
+            <ul class="drop">
+              <a href="/" class="menuText">
+                <li>전투부대 파병국</li>
+              </a>
+              <a href="/" class="menuText">
+                <li>의료지원국</li>
+              </a>
+              <a href="/" class="menuText">
+                <li>전시물자 지원국</li>
+              </a>
+              <a href="/" class="menuText">
+                <li>전후복구 지원국 </li>
+              </a>
+            </ul>
+            <div class="drop_back"></div>
+          </li>
+
+
+          <div class="drop_back"></div>
         </ul>
-        <a href="/" class="menuText">전투</a>
-        <a href="/" class="menuText">참전국</a>
         <div class="input_box">
-          <input type="text" placeholder=" 원하시는 정보의 키워드를 입력해주세요" />
+          <input type="text" id="input" placeholder=" 원하시는 정보의 키워드를 입력해주세요" />
         </div>
       </div>
     </header>
@@ -71,7 +111,9 @@
   <div class="container3 container">
     <div class="greantBg greantBg2">
       <p>전투</p>
-      <button type="button">바로가기</button>
+      <a href="./view/war.html">
+        <button type="button">바로가기</button>
+      </a>
     </div>
   </div>
 
@@ -85,7 +127,7 @@
   </div>
 
   <footer class="foot">
-    <a class="about" href="index.html">About us</a>
+    <a class="about" href="./view/AboutUs.html">About us</a>
   </footer>
 </body>
 
