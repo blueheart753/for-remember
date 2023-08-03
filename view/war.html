@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/war.css" />
-  <script src="/js/app.js" defer></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ee328385dcd208e368b5f51600ee4797"></script>
+  <script src="/js/warDocument.js" defer></script>
   <title>전투</title>
 </head>
 
@@ -36,24 +37,31 @@
     </div>
   </header>
   <div class="flex">
-    <input type="radio" id="radio1" name="timeline" value="a" checked />
-    <input type="radio" id="radio2" name="timeline" value="b" />
-    <input type="radio" id="radio3" name="timeline" value="c" />
-    <input type="radio" id="radio4" name="timeline" value="d" />
     <div class="radio-container">
+      <input type="radio" id="radio1" name="timeline" value="a" checked />
       <label for="radio1" class="radio1">서울</label>
 
+      <input type="radio" id="radio2" name="timeline" value="b" />
       <label for="radio2" class="radio2">경기도</label>
 
+      <input type="radio" id="radio3" name="timeline" value="c" />
       <label for="radio3" class="radio3">충청도</label>
 
+      <input type="radio" id="radio4" name="timeline" value="d" />
       <label for="radio4" class="radio4">경상도</label>
     </div>
-    <div class="page page1">1</div>
-    <div class="page page2">2</div>
-    <div class="page page3">3</div>
-    <div class="page page4">4</div>
-
+    <div class="resultBox">
+      <div id="map"></div>
+      <div class="result">
+        <h2 id="title">미아리 전투</h2>
+        <p class="description">미아리 전투는 한국 전쟁 초기 북한군의 기습적인 전면 남침으로 38도 분계선에 연한 전 전선이 무너지자,
+          육군본부는 38도 분계선으로부터 45km에 불과한 수도 서울에 대한 위협에 직면하게 되자 이응준(李應俊) 소장이 이끄는 국군 제5사단과 유재흥(劉載興) 준장이
+          이끄는 제7사단이 미아리고개에서 치른
+          최후의 서울 방어 전투이다.</p>
+      </div>
+    </div>
+  </div>
+  </div>
   </div>
   <footer class="foot">
     <a class="about" href="AboutUs.html">About us</a>

@@ -56,6 +56,14 @@
   border: 1px solid #000;
   display: none;
 }
+
+table tr,
+td {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 #a:checked ~ .page1,
 #b:checked ~ .page2,
 #c:checked ~ .page3,

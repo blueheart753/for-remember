@@ -2,20 +2,11 @@
   display: flex;
 }
 
-#map {
-  margin-left: 50px;
-  margin-top: 150px;
-  width: 800px;
-  height: 700px;
-  border: #000 solid 1px;
-}
-
 #title {
   margin-top: 150px;
   margin-left: 100px;
 }
 
 .description {
-  width: 900;
-  margin-top: 70px;
+  width: 900px;
 }

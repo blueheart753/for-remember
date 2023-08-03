@@ -44,11 +44,31 @@ input[type="radio"] {
   padding: 5px 13px; /* 라벨의 여백 설정 */
   font-size: 25px; /* 라디오 버튼 텍스트 크기 조정 */
 }
-.page {
-  width: 80vw;
-  height: 70vh;
-  display: none;
-  border: 1px solid #000;
+
+.resultBox {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.result {
+  width: 600px;
+  text-align: center;
+  font-size: 1.27em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+#map {
+  width: 600px;
+  height: 600px;
+  border: #000 solid 1px;
 }
 
 #radio1:checked ~ .radio-container .radio1,
