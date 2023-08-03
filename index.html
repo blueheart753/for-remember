@@ -1,94 +1,93 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/title.css" />
+    <script src="./js/app.js" defer></script>
+    <script src="./js/title.js" defer></script>
+    <script src="./js/titleWar.js" defer></script>
+    <script src="./js/visible.js" defer></script>
+    <script src="./js/war.js" defer></script>
+    <title>전쟁에 관한 간단한 고찰</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/title.css">
-  <script src="./js/app.js" defer></script>
-  <script src="./js/title.js" defer></script>
-  <script src="./js/titleWar.js" defer></script>
-  <script src="./js/visible.js" defer></script>
-  <script src="./js/war.js" defer></script>
-  <title>전쟁에 관한 간단한 고찰</title>
-</head>
+  <body>
+    <div class="titleAnimation">
+      <h1 class="WellcomeWar">6.25</h1>
+      <p class="Wellcome">기억하겠습니다</p>
+      <h1 class="typingWar"></h1>
+      <p class="typing"></p>
+    </div>
+    <div class="container1 container">
+      <header>
+        <div class="wrap">
+          <a href="./view/timeline.html" class="menuText">전쟁 타임라인</a>
+          <a href="./view/war.html" class="menuText">전투</a>
+          <a href="./view/veterans.html" class="menuText">참전국</a>
+          <div class="input_box">
+            <input
+              type="text"
+              id="input"
+              list="searchPage"
+              placeholder=" 원하시는 정보의 키워드를 입력해주세요"
+            />
+            <datalist id="searchPage">
+              <option value="timeLine">타임라인</option>
+              <option value="war">전쟁</option>
+              <option value="veterans">참전국</option>
+              <option value="warDocument">전투</option>
+              <option value="AboutUs">AboutUS</option>
+            </datalist>
+          </div>
+        </div>
+      </header>
+      <div class="rememberKoreanWar">
+        <img src="./src/6.25.png" alt="6.25" class="koreanWarImg" />
+        <p>기억하겠습니다</p>
+      </div>
+    </div>
 
-<body>
-  <div class="titleAnimation">
-    <h1 class="WellcomeWar">6.25</h1>
-    <p class="Wellcome">
-      기억하겠습니다
-    </p>
-    <h1 class="typingWar">
-    </h1>
-    <p class="typing">
-    </p>
-  </div>
-  <div class="container1 container">
-    <header>
-      <div class="wrap">
-        <a href="/view/timeline.html" class="menuText">전쟁 타임라인</a>
-        <a href="/view/war.html" class="menuText">전투</a>
-        <a href="/view/veterans.html" class="menuText">참전국</a>
-        <div class="input_box">
-          <input type="text" id="input" list="searchPage" placeholder=" 원하시는 정보의 키워드를 입력해주세요" />
-          <datalist id="searchPage">
-            <option value="timeLine">타임라인</option>
-            <option value="war">전쟁</option>
-            <option value="veterans">참전국</option>
-            <option value="warDocument">전투</option>
-            <option value="AboutUs">AboutUS</option>
-          </datalist>
+    <div class="container2 container">
+      <div class="greantBg greantBg1">
+        <div class="TimeLineBox">
+          <a href="./view/timeline.html">
+            <p>전쟁 타임라인</p>
+            <button type="button">바로가기</button>
+          </a>
         </div>
       </div>
-    </header>
-    <div class="rememberKoreanWar">
-      <img src="./src/6.25.png" alt="6.25" class="koreanWarImg">
-      <p>기억하겠습니다</p>
     </div>
-  </div>
 
-  <div class="container2 container">
-    <div class="greantBg greantBg1">
-      <div class="TimeLineBox">
-        <a href="./view/timeline.html">
-          <p>전쟁 타임라인</p>
-          <button type="button">바로가기</button>
-        </a>
+    <div class="bg bg1"></div>
+
+    <div class="container3 container">
+      <div class="greantBg greantBg2">
+        <div class="buttonBox">
+          <p>전투</p>
+          <a href="./view/war.html">
+            <button type="button">바로가기</button>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
 
-  <div class="container3 container">
-    <div class="greantBg greantBg2">
-      <div class="buttonBox">
-        <p>전투</p>
-        <a href="./view/war.html">
-          <button type="button">바로가기</button>
-        </a>
+    <div class="container4 container">
+      <div class="greantBg greantBg3">
+        <div class="buttonBox">
+          <p>참전국</p>
+          <a href="./view/veterans.html">
+            <button type="button">바로가기</button>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="bg bg2"></div>
-
-  <div class="container4 container">
-    <div class="greantBg greantBg3">
-      <div class="buttonBox">
-        <p>참전국</p>
-        <a href="./view/veterans.html">
-          <button type="button">바로가기</button>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <footer class="foot">
-    <a class="about" href="./view/AboutUs.html">About us</a>
-  </footer>
-</body>
-
+    <footer class="foot">
+      <a class="about" href="./view/AboutUs.html">About us</a>
+    </footer>
+  </body>
 </html>
