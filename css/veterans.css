@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+}
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.label_box {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  margin-top: 100px;
+}
+
+.label_box > label {
+  width: 200px;
+  height: 80px;
+  margin: 10px 25px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.con2 input {
+  display: none;
+}
+
+#a:checked ~ .label_box .a,
+#b:checked ~ .label_box .b,
+#c:checked ~ .label_box .c,
+#d:checked ~ .label_box .d,
+#e:checked ~ .label_box .e,
+#f:checked ~ .label_box .f {
+  background-color: #3a389d;
+  color: #fff;
+}
+.page {
+  margin-top: 20px;
+  width: 80vw;
+  height: 65vh;
+  border: 1px solid #000;
+  display: none;
+}
+#a:checked ~ .page1,
+#b:checked ~ .page2,
+#c:checked ~ .page3,
+#d:checked ~ .page4,
+#e:checked ~ .page5,
+#f:checked ~ .page6 {
+  display: block;
+}
+.foot {
+  background: #252525;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 1920px;
+  color: white;
+}
+
+/*footer안에 넣어놓은 about us*/
+.about {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}

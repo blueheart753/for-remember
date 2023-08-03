@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/war.css" />
+  <link rel="stylesheet" href="../css/timeline.css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/timeLine.js" defer></script>
   <title>Timeline</title>
 </head>
 
@@ -76,29 +77,34 @@
       </div>
     </div>
   </header>
+
   <div class="flex">
-    <input type="radio" id="radio1" name="timeline" value="a" checked />
-    <input type="radio" id="radio2" name="timeline" value="b" />
-    <input type="radio" id="radio3" name="timeline" value="c" />
-    <input type="radio" id="radio4" name="timeline" value="d" />
     <div class="radio-container">
-      <label for="radio1" class="radio1">서울</label>
+      <input type="radio" id="radio1" name="timeline" value="a" checked />
+      <label for="radio1">전쟁 초반</label>
 
-      <label for="radio2" class="radio2">경기도</label>
+      <input type="radio" id="radio2" name="timeline" value="b" />
+      <label for="radio2">초중반</label>
 
-      <label for="radio3" class="radio3">충청도</label>
+      <input type="radio" id="radio3" name="timeline" value="c" />
+      <label for="radio3">전쟁 중후반</label>
 
-      <label for="radio4" class="radio4">경상도</label>
+      <input type="radio" id="radio4" name="timeline" value="d" />
+      <label for="radio4">전쟁 말기</label>
     </div>
-    <div class="page page1">1</div>
-    <div class="page page2">2</div>
-    <div class="page page3">3</div>
-    <div class="page page4">4</div>
-
+    <div class="result">
+      <div class="result1" id="imgdiv"><img src="/src/war_first.png" alt=""></div>
+      <div class="result2" id="description">
+        <!--내용은 app.js에 war 배열에 있는 description에 넣으면 됨  -->
+        엄
+      </div>
+    </div>
   </div>
 
-  <div class="bottom-box"></div>
-  <div class="menu-container"></div>
+
+  <footer class="foot">
+    <a class="about" href="AboutUs.html">About us</a>
+  </footer>
 </body>
 
 </html>

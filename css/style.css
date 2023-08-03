@@ -180,13 +180,17 @@ header a {
   font-size: 20px;
 }
 
-.greantBg1 button {
+.buttonBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: 100px;
 }
 
-.greantBg2 *,
-.greantBg3 * {
-  margin-left: 100px;
+.TimeLineBox > a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .greantBg button:hover {
@@ -197,6 +201,7 @@ header a {
 }
 
 .bg {
+  display: none;
   box-sizing: border-box;
   width: 100%;
   height: 128px;
@@ -221,12 +226,14 @@ header a {
 }
 
 .foot {
+  display: flex;
   background: #2c2a29;
   height: 70px;
   width: 100%;
   color: white;
-  text-align: center;
-  display: none;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
 }
 
 .about {
@@ -234,3 +241,5 @@ header a {
   font-size: 20px;
   margin-left: 10px;
 }
+
+/* 건들지 말 것!! */
