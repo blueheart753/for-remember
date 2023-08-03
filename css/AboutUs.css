@@ -14,10 +14,22 @@ header {
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   z-index: 11;
+  animation: fadeInUp 1s;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  padding: 10px;
+  margin-left: 370px;
 }
 
 .menuText {
@@ -139,7 +151,7 @@ header a {
   color: #fff;
   height: 100vh;
   position: relative;
-  animation: fadeInLeft 1.5s;
+  animation: fadeInLeft 1s;
 }
 
 /* 메뉴바 타이틀  */
@@ -172,6 +184,17 @@ header a {
   }
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
 /* 설명쪽 css */
 .result {
   margin: auto;
@@ -179,7 +202,7 @@ header a {
   align-items: center;
   justify-content: center;
   font-size: 1.6em;
-  animation: fadeInRight 1.5s;
+  animation: fadeInRight 1.3s;
   text-align: center;
   line-height: 50px;
 }

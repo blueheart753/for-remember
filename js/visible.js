@@ -3,6 +3,7 @@ const container2 = document.querySelector(".container2");
 const container3 = document.querySelector(".container3");
 const container4 = document.querySelector(".container4");
 const footer = document.querySelector(".foot");
+footer.style.display = "none";
 setTimeout(() => {
   document.querySelector(".typingWar").style.opacity = "0";
   document.querySelector(".Wellcome").style.opacity = "0";
@@ -19,5 +20,5 @@ setTimeout(() => {
   document.querySelectorAll(".bg").forEach((el) => {
     el.style.display = "block";
   });
-  footer.style.display = "block";
+  footer.style.display = "flex";
 }, 1200);

@@ -18,7 +18,6 @@
   text-decoration: none;
   list-style: none;
 }
-
 .container {
   display: none;
 }
@@ -41,6 +40,17 @@ header {
   z-index: 11;
 }
 
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+
 .menuText {
   font-size: 26px;
   font-weight: 600;
@@ -57,8 +67,10 @@ header {
   justify-content: space-around;
   position: absolute;
   right: 100px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.562);
 }
-header a {
+.wrap a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,45 +78,6 @@ header a {
   transition: 0.3s;
 }
 
-.timeLine {
-  display: flex;
-}
-
-.timeLine li {
-  width: 200px;
-}
-
-.timeLine > li > ul {
-  height: 0;
-  transition: 0.3s;
-  overflow: hidden;
-}
-.timeLine > li > ul > a {
-  height: 50px;
-}
-
-.timeLine > li:hover ul {
-  height: 200px;
-}
-
-.timeLine ul a:hover {
-  background: #b3c890;
-  color: #fff;
-}
-
-.timeLine li:hover > .drop_back {
-  height: 200px;
-}
-.drop_back {
-  position: absolute;
-  z-index: -1;
-  transition: 0.3s;
-  top: 100%;
-  right: -100px;
-  width: 100vw;
-  height: 0;
-  background-color: #eee;
-}
 .input_box {
   height: 100px;
   display: flex;
@@ -125,6 +98,11 @@ header a {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+  top: 100px;
+}
+.koreanWarImg {
+  height: 300px;
 }
 
 .rememberKoreanWar > h1 {
@@ -180,6 +158,13 @@ header a {
   font-size: 20px;
 }
 
+.red {
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: rgb(158, 26, 26);
+  padding: 5px 15px;
+}
+
 .buttonBox {
   display: flex;
   flex-direction: column;
@@ -227,13 +212,12 @@ header a {
 
 .foot {
   display: flex;
-  background: #2c2a29;
+  background: #2c2a295d;
   height: 70px;
   width: 100%;
-  color: white;
-  position: absolute;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  bottom: 0;
 }
 
 .about {

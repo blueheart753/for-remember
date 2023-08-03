@@ -23,7 +23,7 @@
 
 .label_box > label {
   width: 200px;
-  height: 80px;
+  height: 50px;
   margin: 10px 25px;
   border-radius: 15px;
   text-align: center;
@@ -45,10 +45,7 @@
 
 #a:checked ~ .label_box .a,
 #b:checked ~ .label_box .b,
-#c:checked ~ .label_box .c,
-#d:checked ~ .label_box .d,
-#e:checked ~ .label_box .e,
-#f:checked ~ .label_box .f {
+#c:checked ~ .label_box .c {
   background-color: #3a389d;
   color: #fff;
 }

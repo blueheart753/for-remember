@@ -11,68 +11,24 @@
 
 <body>
   <header>
+    <div class="logo">
+      <a href="/">
+        <img src="/src/-001.png" alt="logo">
+      </a>
+    </div>
     <div class="wrap">
-      <ul class="timeLine">
-        <li>
-          <a href="/view/timeline.html" class="menuText">전쟁 타임라인</a>
-          <ul class="drop">
-            <a href="/view/timeline.html" class="menuText">
-              <li>전쟁초반</li>
-            </a>
-            <a href="/view/timeline.html" class="menuText">
-              <li>전쟁 초중반</li>
-            </a>
-            <a href="/view/timeline.html" class="menuText">
-              <li>전쟁 중후반</li>
-            </a>
-            <a href="/view/timeline.html" class="menuText">
-              <li>전쟁 말기</li>
-            </a>
-          </ul>
-          <div class="drop_back"></div>
-        </li>
-
-        <li>
-          <a href="/view/war.html" class="menuText">전투</a>
-          <ul class="drop">
-            <a href="/view/war.html" class="menuText">
-              <li>서울</li>
-            </a>
-            <a href="/view/war.html" class="menuText">
-              <li>경기도</li>
-            </a>
-            <a href="/view/war.html" class="menuText">
-              <li>충청도</li>
-            </a>
-            <a href="/view/war.html" class="menuText">
-              <li>경상도</li>
-            </a>
-          </ul>
-          <div class="drop_back"></div>
-        </li>
-
-        <li>
-          <a href="/view/veterans.html" class="menuText">참전병</a>
-          <ul class="drop">
-            <a href="/view/veterans.html" class="menuText">
-              <li>전투부대 파병국</li>
-            </a>
-            <a href="/view/veterans.html" class="menuText">
-              <li>의료지원국</li>
-            </a>
-            <a href="/view/veterans.html" class="menuText">
-              <li>전시물자 지원국</li>
-            </a>
-            <a href="/view/veterans.html" class="menuText">
-              <li>전후복구 지원국 </li>
-            </a>
-          </ul>
-          <div class="drop_back"></div>
-        </li>
-        <div class="drop_back"></div>
-      </ul>
+      <a href="/view/timeline.html" class="menuText">전쟁 타임라인</a>
+      <a href="/view/war.html" class="menuText">전투</a>
+      <a href="/view/veterans.html" class="menuText">참전국</a>
       <div class="input_box">
-        <input type="text" id="input" placeholder=" 원하시는 정보의 키워드를 입력해주세요" />
+        <input type="text" id="input" list="searchPage" placeholder=" 원하시는 정보의 키워드를 입력해주세요" />
+        <datalist id="searchPage">
+          <option value="war">전쟁</option>
+          <option value="veterans">참전국</option>
+          <option value="timeLine">타임라인</option>
+          <option value="warDocument">전투</option>
+          <option value="AboutUs">AboutUS</option>
+        </datalist>
       </div>
     </div>
   </header>

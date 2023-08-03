@@ -1,14 +1,6 @@
 body {
   background-color: #ffffff;
 }
-.bottom-box {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  height: 60px;
-  width: 100%;
-}
 
 * {
   margin: 0;
@@ -71,4 +63,9 @@ input[type="radio"] {
 #radio3:checked ~ .page3,
 #radio4:checked ~ .page4 {
   display: block;
+}
+
+.foot {
+  position: absolute;
+  bottom: 0;
 }
