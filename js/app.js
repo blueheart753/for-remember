@@ -17,20 +17,20 @@ searchInput.addEventListener("keydown", (e) => {
   if (e.keyCode === 13) {
     switch (searchInput.value) {
       case "war":
-        location.href = "/view/war.html";
+        location.href = "war.html";
         break;
 
       case "veterans":
-        location.href = "/view/veterans.html";
+        location.href = "veterans.html";
         break;
       case "timeLine":
-        location.href = "/view/timeline.html";
+        location.href = "timeline.html";
         break;
       case "warDocument":
-        location.href = "/view/warDocument.html";
+        location.href = "warDocument.html";
         break;
       case "AboutUs":
-        location.href = "/view/AboutUs.html";
+        location.href = "AboutUs.html";
         break;
 
       default:
