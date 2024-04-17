@@ -1,13 +1,15 @@
 @font-face {
-  font-family: "KCCAhnjunggeun";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCAhnjunggeun.woff2") format("woff2");
+  font-family: 'KCCAhnjunggeun';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCAhnjunggeun.woff2')
+    format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Happy_dobi";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Happy_dobi.woff") format("woff");
+  font-family: 'Happy_dobi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Happy_dobi.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,7 +26,8 @@
 
 .container1 {
   height: 100vh;
-  background: url("../src/—Pngtree—red\ and\ blue\ gradient\ overprinted_5360525\ 1.png") fixed;
+  background: url('../src/—Pngtree—red\ and\ blue\ gradient\ overprinted_5360525\ 1.png')
+    fixed;
   background-size: cover;
   display: none;
   z-index: 999;
@@ -108,7 +111,7 @@ header {
 .rememberKoreanWar > h1 {
   font-size: 200px;
   letter-spacing: 10px;
-  font-family: "Happy_dobi";
+  font-family: 'Happy_dobi';
 }
 
 .rememberKoreanWar > p {
@@ -119,7 +122,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-family: "KCCAhnjunggeun";
+  font-family: 'KCCAhnjunggeun';
 }
 
 .container2 {
@@ -133,7 +136,13 @@ header {
 .greantBg {
   width: 518px;
   height: 164px;
-  background-image: linear-gradient(322deg, #3d3d3d 6.25%, rgba(61, 61, 61, 0.11) 94.79%, rgba(61, 61, 61, 0.16) 99.99%, rgba(61, 61, 61, 0) 100%);
+  background-image: linear-gradient(
+    322deg,
+    #3d3d3d 6.25%,
+    rgba(61, 61, 61, 0.11) 94.79%,
+    rgba(61, 61, 61, 0.16) 99.99%,
+    rgba(61, 61, 61, 0) 100%
+  );
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   display: flex;
   flex-direction: column;
@@ -196,15 +205,6 @@ header {
   display: none;
   height: 641px;
   background: url(../src/war-transformed\ 1.png) no-repeat;
-  justify-content: end;
-  align-items: end;
-  z-index: -1;
-}
-
-.container4 {
-  display: none;
-  height: 641px;
-  background: url(../src/close-up-on-small-greece-flag-isolated\ 1.png) no-repeat;
   justify-content: end;
   align-items: end;
   z-index: -1;
