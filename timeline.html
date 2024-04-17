@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/timeLine.js" defer></script>
+    <script src="js/warDocument.js" defer></script>
+    <title>Timeline</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/timeline.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/app.js" defer></script>
-  <script src="js/timeLine.js" defer></script>
-  <script src="js/warDocument.js" defer></script>
-  <title>Timeline</title>
-</head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="src/-001.png" alt="logo" class="img" />
+        </a>
+      </div>
+      <div class="wrap">
+        <a href="timeline.html" class="menuText">
+          <p class="red">전쟁 타임라인</p>
+        </a>
+        <a href="war.html" class="menuText">전투</a>
+        <div class="input_box">
+          <input
+            type="text"
+            id="input"
+            list="searchPage"
+            placeholder=" 원하시는 정보의 키워드를 입력해주세요"
+          />
+          <datalist id="searchPage">
+            <option value="war">전쟁</option>
+            <option value="timeLine">타임라인</option>
+            <option value="warDocument">전투</option>
+            <option value="AboutUs">AboutUS</option>
+          </datalist>
+        </div>
+      </div>
+    </header>
 
-<body>
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="src/-001.png" alt="logo" class="img" />
-      </a>
-    </div>
-    <div class="wrap">
-      <a href="timeline.html" class="menuText">
-        <p class="red">전쟁 타임라인</p>
-      </a>
-      <a href="war.html" class="menuText">전투</a>
-      <a href="veterans.html" class="menuText">참전국</a>
-      <div class="input_box">
-        <input type="text" id="input" list="searchPage" placeholder=" 원하시는 정보의 키워드를 입력해주세요" />
-        <datalist id="searchPage">
-          <option value="war">전쟁</option>
-          <option value="veterans">참전국</option>
-          <option value="timeLine">타임라인</option>
-          <option value="warDocument">전투</option>
-          <option value="AboutUs">AboutUS</option>
-        </datalist>
+    <div class="flex">
+      <div class="radio-container">
+        <input type="radio" id="radio1" name="timeline" value="a" checked />
+        <label for="radio1">전쟁 초반</label>
+
+        <input type="radio" id="radio2" name="timeline" value="b" />
+        <label for="radio2">초중반</label>
+
+        <input type="radio" id="radio3" name="timeline" value="c" />
+        <label for="radio3">전쟁 중후반</label>
+
+        <input type="radio" id="radio4" name="timeline" value="d" />
+        <label for="radio4">전쟁 말기</label>
+      </div>
+      <div class="result">
+        <div class="result1" id="imgdiv">
+          <img src="./src/war_first.png" alt="" />
+        </div>
+        <div class="result2" id="description">
+          <!--내용은 app.js에 war 배열에 있는 description에 넣으면 됨  -->
+          <p>
+            <strong>
+              <span
+                >사전에 충분히 계획되고 막강한 군사력을 지닌 북한군이 초전에
+                우세</span
+              ></strong
+            >하였던 것은 당연하다. 전쟁을 일으킨 다음날인 6월 26일에
+            <strong
+              ><span
+                >북한의 김일성은 이 전쟁을 가리켜 남한을 ‘해방’시켜
+                ‘조선민주주의 인민공화국’으로 하여금 조국통일을 성취하기 위한
+                전쟁</span
+              ></strong
+            >이라고 방송하였다. 정치가 불안정한 가운데 무방비상태에 있던 한국에
+            대한 북한의 기습공격은 6월 27일에는 이미 서울을 점령하기에 이르렀고,
+            7월 3일에는 한강을 넘어 파죽지세로 남진을 계속하였다. 한편, 일본에
+            주둔하고 있던 미 제24보병사단이 즉시 한국으로 이동하여 적의 진격을
+            저지하려 하였으나 전세를 만회하기에는 역부족이었다. 그리하여
+            <strong
+              ><span
+                >유엔군은 부산을 거점으로 한 낙동강 방어선을 확보하여 항쟁하면서
+                반격의 기회를 노렸다.</span
+              ></strong
+            >
+            한편, 점령지역에서의 북한의 정책은 그들이 내세운 ‘해방’정책과는
+            정면으로 상반되는 것이었다.
+          </p>
+        </div>
       </div>
     </div>
-  </header>
 
-  <div class="flex">
-    <div class="radio-container">
-      <input type="radio" id="radio1" name="timeline" value="a" checked />
-      <label for="radio1">전쟁 초반</label>
-
-      <input type="radio" id="radio2" name="timeline" value="b" />
-      <label for="radio2">초중반</label>
-
-      <input type="radio" id="radio3" name="timeline" value="c" />
-      <label for="radio3">전쟁 중후반</label>
-
-      <input type="radio" id="radio4" name="timeline" value="d" />
-      <label for="radio4">전쟁 말기</label>
-    </div>
-    <div class="result">
-      <div class="result1" id="imgdiv">
-        <img src="./src/war_first.png" alt="" />
-      </div>
-      <div class="result2" id="description">
-        <!--내용은 app.js에 war 배열에 있는 description에 넣으면 됨  -->
-        <p>
-          <strong>
-            <span>사전에 충분히 계획되고 막강한 군사력을 지닌 북한군이 초전에
-              우세</span></strong>하였던 것은 당연하다. 전쟁을 일으킨 다음날인 6월 26일에
-          <strong><span>북한의 김일성은 이 전쟁을 가리켜 남한을 ‘해방’시켜
-              ‘조선민주주의 인민공화국’으로 하여금 조국통일을 성취하기 위한
-              전쟁</span></strong>이라고 방송하였다. 정치가 불안정한 가운데 무방비상태에 있던 한국에
-          대한 북한의 기습공격은 6월 27일에는 이미 서울을 점령하기에 이르렀고,
-          7월 3일에는 한강을 넘어 파죽지세로 남진을 계속하였다. 한편, 일본에
-          주둔하고 있던 미 제24보병사단이 즉시 한국으로 이동하여 적의 진격을
-          저지하려 하였으나 전세를 만회하기에는 역부족이었다. 그리하여
-          <strong><span>유엔군은 부산을 거점으로 한 낙동강 방어선을 확보하여 항쟁하면서
-              반격의 기회를 노렸다.</span></strong>
-          한편, 점령지역에서의 북한의 정책은 그들이 내세운 ‘해방’정책과는
-          정면으로 상반되는 것이었다.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <footer class="foot">
-    <a class="about" href="AboutUs.html">About us</a>
-  </footer>
-</body>
-
+    <footer class="foot">
+      <a class="about" href="AboutUs.html">About us</a>
+    </footer>
+  </body>
 </html>
